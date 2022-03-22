@@ -23,7 +23,7 @@ pipeline {
         stage("Build Image"){
             steps{
                 script{
-                    dockerImage = docker.build chash07/nodeapp
+                    dockerImage = docker.build ('chash07/nodeapp')
                 }
             }
         }
