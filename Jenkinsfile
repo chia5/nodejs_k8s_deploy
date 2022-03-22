@@ -7,7 +7,7 @@ pipeline {
             }
         }
         
-        stage('Build'){
+        stage('Package'){
             steps{
             echo "Stared Build Stage"
             }
@@ -20,7 +20,7 @@ pipeline {
             
         }
         
-        stage("Build"){
+        stage("Build Image"){
             steps{
                 script{
                     dockerImage = docker.build chash07/nodeapp
